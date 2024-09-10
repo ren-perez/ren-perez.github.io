@@ -6,52 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renato Perez - Data Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://kit.fontawesome.com/1e38ce1a56.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="relative text-gray-100 text-opacity-90 min-h-screen background-overlay">
     <div class="content">
         <header class="fixed top-0 left-0 w-full px-16 py-8">
-            <nav class="flex justify-between items-center">
-                <h1 class="text-xl tracking-wide font-semibold">RP</h1>
-                <ul
-                    class="flex space-x-12 px-8 py-4 absolute left-1/2 transform -translate-x-1/2 bg-black bg-opacity-35 rounded-full shadow-xl shadow-slate-900/40 tracking-wider">
-                    <li><a href="#home" class="hover:text-purple-700">Home</a></li>
-                    <li><a href="#work" class="hover:text-purple-700">Work</a></li>
-                    <li><a href="#about" class="hover:text-purple-700">About</a></li>
-                </ul>
-                <a href="assets/renatoperez-resume.pdf" target="_blank"
-                    class="border-black border-2 border-opacity-20 px-5 py-2 rounded-full hover:bg-slate-950 hover:bg-opacity-35">Resume</a>
+            <nav class="flex justify-between items-center text-lg">
+                <!-- Logo -->
+                <div class="flex-1">
+                    <a href="#" class="bg-slate-950/45 z-10 border-2 border-slate-500/25 rounded-full w-20 h-20 flex items-center justify-center backdrop-filter backdrop-blur-xl">
+                        <span class="text-white text-3xl font-medium">RP</span>
+                    </a>
+                </div>
+        
+                <!-- Navigation Links (Centered) -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex bg-slate-950/45 z-10 border-2 border-slate-500/25 backdrop-filter backdrop-blur-xl shadow-lg rounded-full tracking-wider">
+                        <a href="#home" class="pl-10 pr-5 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Home</a>
+                        <a href="#work" class="px-5 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Work</a>
+                        <a href="#about" class="pl-5 pr-10 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">About</a>
+                    </div>
+                </div>
+        
+                <!-- Important Links -->
+                <div class="flex-1 flex justify-end items-center gap-x-8">
+                    <a href="https://www.linkedin.com/in/renato-perezg/" target="_blank" class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/ren-perez?tab=repositories" target="_blank" class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <div class="flex bg-slate-950/45 border-2 border-slate-500/25 backdrop-filter backdrop-blur-xl shadow-2xl rounded-full tracking-wider">
+                        <a href="assets/renatoperez-resume.pdf" target="_blank" class="px-8 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Resume</a>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main class="container mx-auto px-4 pt-24">
+            <!-- HOME -->
             <section id="home" class="flex justify-between items-center h-screen pl-36">
                 <div>
                     <h1 class="text-8xl tracking-wider">Renato Perez</h1>
                     <div class="flex-col space-y-8 text-3xl mt-16 mb-4 max-w-3xl leading-relaxed tracking-wide">
                         <p>
-                            I am a Data Engineer with a Master in Science in Business Analytics and a passion for transforming
-                            raw data into actionable insights. 
+                            I am a Data Engineer with a Master in Science in Business Analytics and a passion for
+                            transforming
+                            raw data into actionable insights.
                         </p>
                         <p>Based in <span class="line-through text-gray-100 text-opacity-30">Lima</span>, <span
                                 class="line-through text-gray-100 text-opacity-30">New York</span>, SF Bay Area
                         </p>
                     </div>
-                    <div class="mx-auto mt-12">
-                        <button type="button"
+                    <div class="max-w-48 mt-12">
+                        <a href="#contact-me"
                             class="flex items-center justify-center rounded-full bg-gradient-to-tr from-purple-700 from-40% to-blue-700 p-[2px] text-lg shadow-md shadow-purple-800/40
                             hover:scale-110 hover:shadow-lg hover:shadow-purple-800/40 transition transition-duration-300">
-                            <div class="flex h-full w-full items-center justify-center rounded-full bg-slate-950 px-6 py-2
-                            hover:bg-clip-text transition transition-duration-300">Contact me
+                            <div class="flex h-full w-full items-center justify-center rounded-full bg-slate-950 px-8 py-2
+                            hover:bg-clip-text transition transition-duration-300 ease-in-out">Contact me
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
 
+            <!-- WORK -->
             <section id="work" class="">
-                <h2 class="text-3xl font-bold">Work</h2>
+                <h2 class="text-4xl tracking-wide">Work</h2>
                 <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 text-lg">
                     <div>
                         <h3 class="text-2xl font-semibold mb-2">SFJAZZ</h3>
@@ -98,12 +122,13 @@
                 </div>
             </section>
 
+            <!-- ABOUT -->
             <section id="about" class="mt-44">
-                <h2 class="text-3xl font-bold">About Me</h2>
+                <h2 class="text-4xl tracking-wide">About Me</h2>
                 <p
                     class="text-lg mt-4 mx-auto text-transparent bg-gradient-to-tr from-pink-500 to-blue-700 bg-clip-text">
                     Open to new opportunities</p>
-                <div class="flex flex-col md:flex-row mt-12 items-start space-y-8 md:space-y-0 md:space-x-8">
+                <div class="flex flex-col md:flex-row mt-16 items-start space-y-8 md:space-y-0 md:space-x-8">
                     <div class="md:w-2/3 text-lg">
                         <p class="mb-4">
                             I am a Data Engineer with a Master's in Business Analytics and a passion for transforming
@@ -126,18 +151,65 @@
                     </div> -->
                 </div>
             </section>
+
+            <!-- CONTACT ME -->
+            <section id="contact-me" class="mt-44">
+                <h2 class="text-4xl tracking-wide mb-16">Contact Me</h2>
+                <div class="flex justify-center">
+                    <form action="https://formspree.io/f/myzgvryk" method="POST"
+                        class="bg-gray-800 bg-opacity-50 rounded-lg p-8 shadow-lg w-full max-w-md backdrop-filter backdrop-blur-xl">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name"
+                                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email"
+                                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 mb-2">Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="flex items-center justify-center rounded-full bg-gradient-to-tr from-purple-700 from-40% to-blue-700 p-[2px] text-lg shadow-md shadow-purple-800/40
+                            hover:scale-110 hover:shadow-lg hover:shadow-purple-800/40 transition transition-duration-300">
+                            <div class="flex h-full w-full items-center justify-center rounded-full bg-slate-950 px-8 py-2
+                            hover:bg-clip-text transition transition-duration-300">Send
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <footer class="py-4 mt-56 pb-4">
             <div class="container mx-auto px-4 flex justify-between items-center">
-                <p>resebpego@gmail.com</p>
-                <div>
-                    <a href="https://www.linkedin.com/in/renato-perezg/" target="_blank"
-                        class="mr-4 hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30">LinkedIn</a>
-                    <a href="https://github.com/ren-perez?tab=repositories" target="_blank"
-                        class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30">GitHub</a>
+                <!-- Email -->
+                <div class="flex-1">
+                    <p>resebpego@gmail.com</p>
                 </div>
-                <p class="text-gray-100 text-opacity-30">Designed and coded by Renato Perez © 2024</p>
+        
+                <!-- Social Links (Centered) -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex items-center">
+                        <a href="https://www.linkedin.com/in/renato-perezg/" target="_blank"
+                            class="mr-4 hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/ren-perez?tab=repositories" target="_blank"
+                            class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Copyright -->
+                <div class="flex-1 text-right">
+                    <p class="text-gray-100 text-opacity-40">Designed and coded by Renato Perez © 2024</p>
+                </div>
             </div>
         </footer>
     </div>
