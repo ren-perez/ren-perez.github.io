@@ -7,46 +7,57 @@
     <title>Renato Perez - Data Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="https://kit.fontawesome.com/1e38ce1a56.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="relative text-gray-100 text-opacity-90 min-h-screen background-overlay">
+<body class="relative text-gray-100 text-opacity-90 min-h-screen background-overlay bg-gray-950">
     <div class="content">
-        <header class="fixed top-0 left-0 w-full px-16 py-8">
-            <nav class="flex justify-between items-center text-lg">
+        <header class="fixed top-0 left-0  w-full px-16 bg-zinc-950/45 z-10 border-b-2 border-slate-500/25 backdrop-filter backdrop-blur-xl">
+            <nav class="h-20 flex justify-between items-center text-lg">
                 <!-- Logo -->
                 <div class="flex-1">
-                    <a href="#" class="bg-slate-950/45 z-10 border-2 border-slate-500/25 rounded-full w-20 h-20 flex items-center justify-center backdrop-filter backdrop-blur-xl">
+                    <a href="#"
+                        class="bg-slate-950/45 z-10 rounded-full max-w-min flex items-center justify-center backdrop-filter backdrop-blur-xl">
                         <span class="text-white text-3xl font-medium">RP</span>
                     </a>
                 </div>
-        
+
                 <!-- Navigation Links (Centered) -->
                 <div class="flex-1 flex justify-center">
-                    <div class="flex bg-slate-950/45 z-10 border-2 border-slate-500/25 backdrop-filter backdrop-blur-xl shadow-lg rounded-full tracking-wider">
-                        <a href="#home" class="pl-10 pr-5 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Home</a>
-                        <a href="#work" class="px-5 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Work</a>
-                        <a href="#about" class="pl-5 pr-10 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">About</a>
+                    <div
+                        class="flex z-10 tracking-wider">
+                        <a href="#home"
+                            class="pl-10 pr-5 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Home</a>
+                        <a href="#work"
+                            class="px-5 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Work</a>
+                        <a href="#about"
+                            class="pl-5 pr-10 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Contact</a>
                     </div>
                 </div>
-        
+
                 <!-- Important Links -->
                 <div class="flex-1 flex justify-end items-center gap-x-8">
-                    <a href="https://www.linkedin.com/in/renato-perezg/" target="_blank" class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    <a href="https://www.linkedin.com/in/renato-perezg/" target="_blank"
+                        class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
+                        <i class="fa-brands fa-linkedin text-3xl"></i>
                     </a>
-                    <a href="https://github.com/ren-perez?tab=repositories" target="_blank" class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
-                        <i class="fab fa-github fa-2x"></i>
+                    <a href="https://github.com/ren-perez?tab=repositories" target="_blank"
+                        class="hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
+                        <i class="fab fa-github text-3xl"></i>
                     </a>
-                    <div class="flex bg-slate-950/45 border-2 border-slate-500/25 backdrop-filter backdrop-blur-xl shadow-2xl rounded-full tracking-wider">
-                        <a href="assets/renatoperez-resume.pdf" target="_blank" class="px-8 py-3 hover:text-purple-400 hover:scale-110 transition duration-300">Resume</a>
+                    <div
+                        class="flex bg-slate-950/45 border-2 border-slate-500/25 backdrop-filter backdrop-blur-xl shadow-2xl rounded-full tracking-wider">
+                        <a href="assets/renatoperez-resume.pdf" target="_blank"
+                            class="px-6 py-2 hover:text-purple-400 hover:scale-110 transition duration-300">Resume</a>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main class="container mx-auto px-4 pt-24">
+        <main class="container mx-auto px-36 pt-24">
             <!-- HOME -->
             <section id="home" class="flex justify-between items-center h-screen pl-36">
                 <div>
@@ -74,126 +85,156 @@
             </section>
 
             <!-- WORK -->
-            <section id="work" class="">
+            <section id="work" class="container">
                 <h2 class="text-4xl tracking-wide">Work</h2>
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 text-lg">
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">SFJAZZ</h3>
-                        <h4 class="text-xl mb-4">Live Shows Ticket Sales Data Prediction</h4>
-                        <p>This study investigates the determinants of live show ticket sales at SFJAZZ, with a
-                            particular
-                            focus on the impact of digital marketing campaigns.</p>
+                <div class="mt-16 grid grid-cols-1 ">
+                    <div
+                        class="bg-zinc-800/60 border-zinc-800 border rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-xl">
+                        <h2 class="text-2xl rounded-lg mb-10">Automated Work
+                            Schedule Integration</h2>
+                        <div class="grid grid-cols-2 gap-x-8">
+                            <div>
+                                <p class="font-medium mb-4 text-lg">Summary</p>
+                                <p class="">Python-based tool that automates the process of fetching your work schedule
+                                    from
+                                    your employer's webpage and syncing it with your Google Calendar.
+                                    <br> The project uses Selenium to log into the employer's portal, retrieves the
+                                    schedule
+                                    data, and then creates events on Google Calendar, ensuring your work schedule is
+                                    always
+                                    up-to-date.
+                                </p>
+                                <p class="mt-8 mb-4 text-lg">Technology stack</p>
+                                <div class="flex gap-x-2">
+                                    <span class="px-3 py-1 bg-emerald-600/80 rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-orange-600/80 rounded-full">SQL</span>
+                                    <span class="px-3 py-1 bg-blue-800/80 rounded-full">Selenium</span>
+                                    <span class="px-3 py-1 bg-gray-500/80 rounded-full">Google calendar API</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="assets/neon-1.jpg" alt="architecture">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Amazon</h3>
-                        <h4 class="text-xl mb-4">ETL Pipeline for Big Data</h4>
-                        <p>This project involves creating advanced data solutions and managing complex data warehouses
-                            for
-                            Amazon's big data infrastructure.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 ">
+                    <div
+                        class="bg-zinc-800/60 border-zinc-800 border rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-xl">
+                        <h2 class="text-2xl rounded-lg mb-10">Automated Work
+                            Schedule Integration</h2>
+                        <div class="grid grid-cols-2 gap-x-8">
+                            <div>
+                                <p class="font-medium mb-4 text-lg">Summary</p>
+                                <p class="">Python-based tool that automates the process of fetching your work schedule
+                                    from
+                                    your employer's webpage and syncing it with your Google Calendar.
+                                    <br> The project uses Selenium to log into the employer's portal, retrieves the
+                                    schedule
+                                    data, and then creates events on Google Calendar, ensuring your work schedule is
+                                    always
+                                    up-to-date.
+                                </p>
+                                <p class="mt-8 mb-4 text-lg">Technology stack</p>
+                                <div class="flex gap-x-2">
+                                    <span class="px-3 py-1 bg-emerald-600/80 rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-orange-600/80 rounded-full">SQL</span>
+                                    <span class="px-3 py-1 bg-blue-800/80 rounded-full">Selenium</span>
+                                    <span class="px-3 py-1 bg-gray-500/80 rounded-full">Google calendar API</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="assets/neon-1.jpg" alt="architecture">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">SFJAZZ</h3>
-                        <h4 class="text-xl mb-4">Live Shows Ticket Sales Data Prediction</h4>
-                        <p>This study investigates the determinants of live show ticket sales at SFJAZZ, with a
-                            particular
-                            focus on the impact of digital marketing campaigns.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Amazon</h3>
-                        <h4 class="text-xl mb-4">ETL Pipeline for Big Data</h4>
-                        <p>This project involves creating advanced data solutions and managing complex data warehouses
-                            for
-                            Amazon's big data infrastructure.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">SFJAZZ</h3>
-                        <h4 class="text-xl mb-4">Live Shows Ticket Sales Data Prediction</h4>
-                        <p>This study investigates the determinants of live show ticket sales at SFJAZZ, with a
-                            particular
-                            focus on the impact of digital marketing campaigns.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Amazon</h3>
-                        <h4 class="text-xl mb-4">ETL Pipeline for Big Data</h4>
-                        <p>This project involves creating advanced data solutions and managing complex data warehouses
-                            for
-                            Amazon's big data infrastructure.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 ">
+                    <div
+                        class="bg-zinc-800/60 border-zinc-800 border rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-xl">
+                        <h2 class="text-2xl rounded-lg mb-10">Automated Work
+                            Schedule Integration</h2>
+                        <div class="grid grid-cols-2 gap-x-8">
+                            <div>
+                                <p class="font-medium mb-4 text-lg">Summary</p>
+                                <p class="">Python-based tool that automates the process of fetching your work schedule
+                                    from
+                                    your employer's webpage and syncing it with your Google Calendar.
+                                    <br> The project uses Selenium to log into the employer's portal, retrieves the
+                                    schedule
+                                    data, and then creates events on Google Calendar, ensuring your work schedule is
+                                    always
+                                    up-to-date.
+                                </p>
+                                <p class="mt-8 mb-4 text-lg">Technology stack</p>
+                                <div class="flex gap-x-2">
+                                    <span class="px-3 py-1 bg-emerald-600/80 rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-orange-600/80 rounded-full">SQL</span>
+                                    <span class="px-3 py-1 bg-blue-800/80 rounded-full">Selenium</span>
+                                    <span class="px-3 py-1 bg-gray-500/80 rounded-full">Google calendar API</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="assets/neon-1.jpg" alt="architecture">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- ABOUT -->
-            <section id="about" class="mt-44">
-                <h2 class="text-4xl tracking-wide">About Me</h2>
-                <p
-                    class="text-lg mt-4 mx-auto text-transparent bg-gradient-to-tr from-pink-500 to-blue-700 bg-clip-text">
-                    Open to new opportunities</p>
-                <div class="flex flex-col md:flex-row mt-16 items-start space-y-8 md:space-y-0 md:space-x-8">
-                    <div class="md:w-2/3 text-lg">
-                        <p class="mb-4">
-                            I am a Data Engineer with a Master's in Business Analytics and a passion for transforming
-                            raw data into actionable insights. Skilled in building robust ETL processes and big data
-                            solutions using Python, SQL, Spark, and cloud platforms.
-
-                            With a background in Business Analytics and over 4 years of experience in data
-                            engineering, I have developed expertise in building scalable data pipelines, distributed
-                            systems, and big data processing. I currently lead Saturn Labs as Founder & Lead Data
-                            Engineer,
-                            optimizing data models and ETL processes for South American clients, achieving up to 80%
-                            improved data efficiency.</p>
-                        <p class="mb-4">My prior roles at Amazon, The Home Depot, and Ernst & Young involved creating
-                            advanced data solutions and managing complex data warehouses.</p>
-                        <p>I hold a Master of Science in Business Analytics from San Francisco State University and am
-                            proficient in tools such as Python, SQL, AWS, and Spark.</p>
-                    </div>
-                    <!-- <div class="md:w-1/3">
-                        <img src="assets/1-pic.jpg" alt="Renato Perez" class="w-full shadow-lg">
-                    </div> -->
-                </div>
-            </section>
-
-            <!-- CONTACT ME -->
             <section id="contact-me" class="mt-44">
-                <h2 class="text-4xl tracking-wide mb-16">Contact Me</h2>
-                <div class="flex justify-center">
-                    <form action="https://formspree.io/f/myzgvryk" method="POST"
-                        class="bg-gray-800 bg-opacity-50 rounded-lg p-8 shadow-lg w-full max-w-md backdrop-filter backdrop-blur-xl">
-                        <div class="mb-6">
-                            <label for="name" class="block text-gray-300 mb-2">Name</label>
-                            <input type="text" id="name" name="name" required
-                                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <!-- <h2 class="text-4xl tracking-wide mb-16">Contact Me</h2> -->
+                <div class="grid grid-cols-2">
+                    <div class="text-5xl flex flex-col justify-center">
+                        <p class="leading-snug tracking-wide">Let's chat. <br> Tell me about your project.</p>
+                        <p class="text-lg mt-6">Let's create something together</p>
+                        <div class="text-base py-8">
+                            <span class="bg-zinc-200 rounded-lg px-2 py-1"><i class="fa-solid fa-envelope text-black/90"></i></span>
+                            <span class="text-lg ml-2">Mail me at <a href="mailto:resebpego@gmail.com" class="hover:text-blue-500">resebpego@gmail.com</a></span>
                         </div>
-                        <div class="mb-6">
-                            <label for="email" class="block text-gray-300 mb-2">Email</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-300 mb-2">Message</label>
-                            <textarea id="message" rows="4" name="message" required
-                                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="flex items-center justify-center rounded-full bg-gradient-to-tr from-purple-700 from-40% to-blue-700 p-[2px] text-lg shadow-md shadow-purple-800/40
-                            hover:scale-110 hover:shadow-lg hover:shadow-purple-800/40 transition transition-duration-300">
-                            <div class="flex h-full w-full items-center justify-center rounded-full bg-slate-950 px-8 py-2
-                            hover:bg-clip-text transition transition-duration-300">Send
+                    </div>
+                    <div class="flex justify-center">
+                        <form action="https://formspree.io/f/myzgvryk" method="POST"
+                            class="bg-zinc-800 bg-opacity-50 rounded-lg p-8 shadow-lg w-full max-w-md backdrop-filter backdrop-blur-xl">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-300 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
-                        </button>
-                    </form>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-300 mb-2">Message</label>
+                                <textarea id="message" rows="4" name="message" required
+                                    class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-600 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="flex items-center justify-center rounded-full bg-gradient-to-tr from-purple-700 from-40% to-blue-700 p-[2px] text-lg shadow-md shadow-purple-800/40
+                                hover:scale-110 hover:shadow-lg hover:shadow-purple-800/40 transition transition-duration-300">
+                                <div class="flex h-full w-full items-center justify-center rounded-full bg-slate-950 px-8 py-2
+                                hover:bg-clip-text transition transition-duration-300">Send
+                                </div>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
+
         </main>
 
         <footer class="py-4 mt-56 pb-4">
-            <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="container mx-auto px-4 flex justify-center items-center">
                 <!-- Email -->
-                <div class="flex-1">
+                <!-- <div class="flex-1">
                     <p>resebpego@gmail.com</p>
-                </div>
-        
+                </div> -->
+
                 <!-- Social Links (Centered) -->
-                <div class="flex-1 flex justify-center">
+                <!-- <div class="flex-1 flex justify-center">
                     <div class="flex items-center">
                         <a href="https://www.linkedin.com/in/renato-perezg/" target="_blank"
                             class="mr-4 hover:text-purple-500 hover:shadow-md hover:shadow-purple-800/30 transition duration-300">
@@ -204,10 +245,10 @@
                             <i class="fab fa-github fa-2x"></i>
                         </a>
                     </div>
-                </div>
-        
+                </div> -->
+
                 <!-- Copyright -->
-                <div class="flex-1 text-right">
+                <div class="">
                     <p class="text-gray-100 text-opacity-40">Designed and coded by Renato Perez © 2024</p>
                 </div>
             </div>

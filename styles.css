@@ -88,10 +88,10 @@ header {
 }
 
 body {
-    background-image: url('/assets/neon-1.jpg');
-    background-size: cover;
+    /* background-image: url('/assets/neon-1.jpg'); */
+    /* background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* font-family: 'NeueHass', sans-serif; */
 }
 
